@@ -715,21 +715,6 @@ defaults write com.twitter.twitter-mac ShowFullNames -bool true
 defaults write com.twitter.twitter-mac HideInBackground -bool true
 
 ###############################################################################
-# Macports                                                                    #
-###############################################################################
-
-DIR=$(cd $(dirname "$0"); pwd)
-if [[ -f $DIR/packages/macports ]]; then
-  exec<$DIR/packages/macports
-  while read line
-  do
-    if [[ ! "$line" =~ (^#|^$) ]]; then
-      sudo port install $line
-    fi
-  done
-fi
-
-###############################################################################
 # Homebrew
 ###############################################################################
 

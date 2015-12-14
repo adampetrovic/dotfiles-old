@@ -10,6 +10,10 @@
 # Compiled source
 *.pyc
 *.pyo
+*.class
+*.dll
+*.exe
+*.o
 
 # IDE specific
 dwsync.xml
@@ -46,3 +50,7 @@ svn-commit.*
 tags
 TAGS
 
+.coverage
+*cover
+.bundle
+*.sqlite

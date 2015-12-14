@@ -9,8 +9,8 @@
 
 # Global Config
 [user]
-    #name = "**Your Name**"
-    #email = "**Your Email**"
+    name = "Adam Petrovic"
+    email = "me@adampetrovic.me"
     #signingkey = **Your GPG ID**
 
 [branch "master"]
@@ -48,7 +48,14 @@
     untracked = cyan
     branch = magenta
 
+[push]
+    default = current
+
+[branch]
+    autosetuprebase = always
+
 [core]
+    editor = vim
     pager = less -FRSX
     whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
 

@@ -34,13 +34,18 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 NeoBundle 'tomasr/molokai'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'tpope/vim-git'
+NeoBundle 'tpope/vim-surround'
 NeoBundle 'kien/ctrlp.vim'
+NeoBundle 'vim-scripts/taglist.vim'
 NeoBundle 'mattn/gist-vim'
 NeoBundle 'mattn/webapi-vim'
 NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'bling/vim-airline'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'scrooloose/nerdcommenter'
+NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'Shougo/neocomplete.vim'
+NeoBundle 'majutsushi/tagbar'
 
 " Language plugins
 NeoBundle 'solarnz/arcanist.vim'
@@ -49,7 +54,7 @@ NeoBundle "groenewege/vim-less"
 NeoBundle "rodjek/vim-puppet"
 NeoBundle "fatih/vim-go"
 NeoBundle "rust-lang/rust.vim"
-NeoBundle "klen/python-mode"
+NeoBundle "davidhalter/jedi-vim"
 
 call neobundle#end()
 

@@ -44,11 +44,14 @@ vim/vim
 vim/vimrc
 wget/wgetrc
 zsh/zshrc
+zsh/zsh
 [endfiles]
 
 # Hosts to sync
 ## hostname                     type=masterhost, ANY or NONE    files=dotfile:tolink,another:tolink
 [hosts]
-laptop                           git=ANY
+apetrovic			            git=ANY
+manager-0.ash2                            rsync=apetrovic
+manager-0.sm1                             rsync=apetrovic
+manager-0.sc1                             rsync=apetrovic
 [endhosts]
-

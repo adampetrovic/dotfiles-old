@@ -1,6 +1,6 @@
 # paths
-export PATH="$HOME/.local/bin:$PATH"
 export GOPATH="$HOME/go"
+export PATH="$HOME/bin:$GOPATH/bin:$PATH"
 
 # xdg
 export XDG_CACHE_HOME="$HOME/.fonts"

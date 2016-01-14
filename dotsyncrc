@@ -35,6 +35,7 @@ python/pylintrc
 screen/screenrc
 shell/hushlogin
 shell/urlview
+sift/sift.conf
 ssh
 task/task
 task/taskrc

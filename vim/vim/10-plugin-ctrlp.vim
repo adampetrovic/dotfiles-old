@@ -8,7 +8,7 @@ let g:ctrlp_max_height = 20
 let g:ctrlp_max_files = 0 
 let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_custom_ignore = { 
-  \ 'dir':  '\v[\/]\.(git|hg|cover|svn|gen-py|gen-go|gen-php)$',
-  \ 'file': '\v\.(exe|so|dll)$',
+  \ 'dir':  '\v[\/]\.(git|hg|cover|svn|gen-py|gen-go|gen-php|tox|egg-info|build)$',
+  \ 'file': '\v\.(exe|so|dll|pyc)$',
   \ }
 

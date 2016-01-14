@@ -1,4 +1,4 @@
-- clean: ['~']
+- clean: ['~', '~/.config']
 
 - link:
 
@@ -6,7 +6,7 @@
     ~/.ctags: ctags/ctags
     ~/.curlrc: curl/curlrc
     ~/.editrc: input/editrc
-    ~/.git: git
+    ~/.config/git: git
     ~/.gnupg: gnupg
     ~/.grc: grc
     ~/.hushlogin: shell/hushlogin
@@ -17,7 +17,6 @@
     ~/.screenrc: screen/screenrc
     ~/.task: task/task
     ~/.taskrc: task/taskrc
-    ~/.tigrc: git/tigrc
     ~/.tmux.conf: tmux/tmux.conf
     ~/.urlview: shell/urlview
     ~/.vim: vim/vim

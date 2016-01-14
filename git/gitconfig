@@ -153,3 +153,5 @@
 [url "git@github.com:"]
     insteadof = github:
 
+[remote "origin"]
+	receivepack = git-receive-pack

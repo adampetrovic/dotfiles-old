@@ -1,5 +1,5 @@
 # paths
-export GOPATH="$HOME/go"
+export GOPATH="$HOME/src/go"
 export PATH="$HOME/bin:$GOPATH/bin:$PATH"
 
 # xdg

@@ -4,7 +4,7 @@ cmap w!! %!sudo tee > /dev/null %
 " show git diff in vsplit with git commit
 autocmd FileType gitcommit DiffGitCached | wincmd L | wincmd p
 
-" strip trailing whitespace on save, in python
+" strip trailing whitespace on save
 autocmd FileType c,cpp,python,ruby,java,php autocmd BufWritePre <buffer> :%s/\s\+$//e
 
 " Autocorrect words / spelling mistakes

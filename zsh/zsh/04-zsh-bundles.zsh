@@ -14,3 +14,6 @@ antigen bundles <<EOBUNDLES
     vi-mode
     web-search
 EOBUNDLES
+
+bindkey "^R" history-incremental-search-backward
+bindkey "^N" history-incremental-search-forward

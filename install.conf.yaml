@@ -24,3 +24,7 @@
     ~/.wgetrc: wget/wgetrc
     ~/.zsh: zsh/zsh
     ~/.zshrc: zsh/zshrc
+
+- shell:
+
+    - [mkdir -p ~/.config, Creating config directory]

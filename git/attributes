@@ -6,7 +6,3 @@
 # Authors:
 #   Ben O'Hara <bohara@gmail.com>
 #
-
-# Automatically normalize line endings for all text-based files
-* text=auto
-

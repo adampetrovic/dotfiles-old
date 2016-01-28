@@ -9,11 +9,9 @@
 *~
 *.sublime-*
 *.d/localhost
-ssh/id*
-ssh/environment*
-ssh/known_hosts
-ssh/master/*
-ssh/config
+
+ssh/
+
 gnupg/secring.gpg
 gnupg/pubring.gpg
 gnupg/trustdb.gpg
@@ -24,3 +22,6 @@ gnupg/private*
 gnupg/*~
 task/task/*.data
 vim/vim/bundle*
+
+# dotfiles specific ignore
+30-atlassian.zsh

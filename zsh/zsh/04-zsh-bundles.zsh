@@ -11,7 +11,6 @@ antigen bundles <<EOBUNDLES
     python
     sudo
     tmux
-    vi-mode
     web-search
 EOBUNDLES
 

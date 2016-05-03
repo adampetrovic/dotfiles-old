@@ -37,6 +37,17 @@ nbproject
 desktop.ini
 ehthumbs.db
 Thumbs.db
+.AppleDouble
+.LSOverride
+.DocumentRevisions-V100
+.fseventsd
+.TemporaryItems
+.VolumeIcon.icns
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
 
 # Other dev-related files
 *.bak

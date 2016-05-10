@@ -1,11 +1,10 @@
-alias ag="ag --silent"
-alias ack-grep="ag"
 alias sprunge="curl -F 'sprunge=<-' http://sprunge.us"
+alias ack-grep="sift"
+alias ag="sift"
 alias cpv="rsync -pogr --progress"
 alias claer="clear"
 alias sl="ls"
 alias da="deactivate"
-alias scrot="scrot -e 'mv \$f ~/screenshots/'"
 alias tmux="tmux -2"
 alias t="task"
 

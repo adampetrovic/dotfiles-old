@@ -147,9 +147,6 @@
     rex = remote rm
     rem = remote rename
 
-[push]
-    default = matching
-
 [url "git@github.com:"]
     insteadof = github:
 

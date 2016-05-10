@@ -26,6 +26,5 @@
     ~/.zshrc: zsh/zshrc
 
 - shell:
-
     - [mkdir -p ~/.config, Creating config directory]
     - [mkdir -p ~/.ssh/master, Creating SSH ControlMaster directory]

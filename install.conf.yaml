@@ -3,13 +3,13 @@
 - link:
 
     ~/.bin: bin
-    ~/.ctags: ctags/ctags
-    ~/.curlrc: curl/curlrc
-    ~/.editrc: input/editrc
     ~/.config/git: git
+    ~/.ctags: ctags/ctags
+    ~/.editrc: input/editrc
     ~/.gnupg: gnupg
     ~/.grc: grc
     ~/.hushlogin: shell/hushlogin
+    ~/.ideavimrc: vim/vimrc
     ~/.inputrc: input/inputrc
     ~/.psqlrc: postgresql/psqlrc
     ~/.pythonrc: python/pythonrc

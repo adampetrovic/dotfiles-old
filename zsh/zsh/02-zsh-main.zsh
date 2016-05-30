@@ -1,6 +1,5 @@
 # paths
-export GOPATH="$HOME/src/go"
-export PATH="$HOME/bin:$GOPATH/bin:$PATH"
+export PATH="$HOME/.bin:$PATH"
 
 # xdg
 export XDG_CACHE_HOME="$HOME/.fonts"

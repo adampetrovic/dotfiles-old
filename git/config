@@ -13,10 +13,6 @@
     email = "apetrovic@atlassian.com"
     #signingkey = **Your GPG ID**
 
-[branch "master"]
-    remote = origin
-    merge = refs/heads/master
-
 [color]
     branch = always
     diff = always
@@ -164,7 +160,7 @@
     tab-size = 2
     commit-encoding = "UTF-8"
 [pager]
-	diff = diff-so-fancy | less --tabs=1,5 -RFX
+    #diff = diff-so-fancy | less --tabs=1,5 -RFX
 	show = diff-so-fancy | less --tabs=1,5 -RFX
 [color "diff-highlight"]
 	oldNormal = red bold

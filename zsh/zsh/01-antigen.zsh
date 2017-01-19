@@ -13,5 +13,8 @@ if [[ -e $HOME/.antigen.zsh ]]; then
     antigen bundle zsh-users/zsh-syntax-highlighting
     antigen bundle zsh-users/zsh-history-substring-search
 
+    # custom utils
+    antigen bundle zlsun/solarized-man
+
     antigen apply
 fi

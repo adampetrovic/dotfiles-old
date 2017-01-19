@@ -4,14 +4,10 @@ export ZSH_TMUX_ITERM2=false
 
 antigen bundles <<EOBUNDLES
     git
-    git-flow
-    unixorn/git-extra-commands
-    git-extras
     pip
     python
     sudo
     tmux
-    web-search
 EOBUNDLES
 
 bindkey "^R" history-incremental-search-backward

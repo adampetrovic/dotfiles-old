@@ -4,12 +4,6 @@ export PATH="$HOME/.bin:$PATH"
 # xdg
 export XDG_CACHE_HOME="$HOME/.fonts"
 
-# env
-if [[ $(uname) == "Linux" && $SSH_CONNECTION == "" ]]; then
-    export TERM=rxvt-unicode
-else
-    export TERM=xterm
-fi
 export EDITOR='vim'
 
 # terminal settings

@@ -18,6 +18,7 @@
     ~/.task: task/task
     ~/.taskrc: task/taskrc
     ~/.tmux.conf: tmux/tmux.conf
+    ~/.tmux.conf.local: tmux/tmux.conf.local
     ~/.urlview: shell/urlview
     ~/.vim: vim/vim
     ~/.vimrc: vim/vimrc

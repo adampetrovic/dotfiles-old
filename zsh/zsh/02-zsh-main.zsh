@@ -1,5 +1,5 @@
 # paths
-export PATH="$HOME/.bin:$PATH"
+export PATH="$HOME/.bin:/usr/local/bin:$PATH"
 
 # xdg
 export XDG_CACHE_HOME="$HOME/.fonts"

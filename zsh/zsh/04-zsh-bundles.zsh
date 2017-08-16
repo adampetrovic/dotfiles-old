@@ -8,6 +8,8 @@ antigen bundles <<EOBUNDLES
     python
     sudo
     tmux
+    tmuxinator
+    skx/sysadmin-util
 EOBUNDLES
 
 bindkey "^R" history-incremental-search-backward

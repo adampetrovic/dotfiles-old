@@ -3,12 +3,16 @@ export ZSH_TMUX_AUTOSTART=false
 export ZSH_TMUX_ITERM2=false
 
 antigen bundles <<EOBUNDLES
+    bgnotify
+    copybuffer
     git
+    jira
     pip
     python
     sudo
     tmux
     tmuxinator
+
     skx/sysadmin-util
 EOBUNDLES
 

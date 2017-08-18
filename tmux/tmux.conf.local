@@ -235,15 +235,7 @@ set -g history-limit 10000
 bind-key | split-window -h
 bind-key - split-window -v
 
-# force Vi mode
-#   really you should export VISUAL or EDITOR environment variable, see manual
-#set -g status-keys vi
-#set -g mode-keys vi
-
-# move status line to top
-#set -g status-position top
-
 # disable automated renaming
 set-option -g allow-rename off
 
-set -sg repeat-time 100 
+set -sg repeat-time 300

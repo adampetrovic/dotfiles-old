@@ -29,3 +29,23 @@
 - shell:
     - [mkdir -p ~/.config, Creating config directory]
     - [mkdir -p ~/.ssh/master, Creating SSH ControlMaster directory]
+    - 
+        command: source install/brew.sh
+        stdin: true
+        stdout: true
+        description: Installing Brew + Packages
+    - 
+        command: source install/brew-cask.sh
+        stdin: true
+        stderr: true
+        stdout: true
+        description: Installing Brew-Cask + Packages
+    - [source install/directories.sh, Creating default directories]
+    - 
+        command: source install/macos.sh
+        stdin: true
+        stderr: true
+        stdout: true
+        description: Applying MacOS customisations
+    - [source install/ruby.sh, Installing Ruby + Packages]
+    - [source install/dock.sh, Applying Dock preferences]

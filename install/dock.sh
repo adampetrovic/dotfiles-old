@@ -12,8 +12,6 @@ dockutil --no-restart --add "/Applications/Things3.app"
 dockutil --no-restart --add "/Applications/Telegram.app"
 dockutil --no-restart --add "/Applications/Spotify.app"
 dockutil --no-restart --add "/Applications/System Preferences.app"
-dockutil --add '~/Atlassian' --view grid --display folder
-dockutil --add '~/Downloads' --view grid --display folder
-dockutil --add '/Applications' --view grid --display folder
-
-killall Dock
+dockutil --add '/Applications' --view grid --display folder --sort name
+dockutil --add '~/Downloads' --view grid --display folder --sort dateadded
+dockutil --add '~/Atlassian' --view grid --display folder --sort name

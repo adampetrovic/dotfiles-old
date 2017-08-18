@@ -10,6 +10,7 @@ brew tap caskroom/fonts
 apps=(
     1password
     alfred
+    caffeine
     charles
     dash
     dbvisualizer
@@ -20,11 +21,14 @@ apps=(
     iterm2
     istat-menus
     paw
+    private-internet-access
     sketch
     sourcetree
     spectacle
     spotify
     sublime-text
+    telegram
+    tor-browser
     vlc
 )
 

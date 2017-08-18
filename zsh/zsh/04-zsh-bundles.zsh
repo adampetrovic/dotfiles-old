@@ -3,7 +3,6 @@ export ZSH_TMUX_AUTOSTART=false
 export ZSH_TMUX_ITERM2=false
 
 antigen bundles <<EOBUNDLES
-    bgnotify
     copybuffer
     git
     jira

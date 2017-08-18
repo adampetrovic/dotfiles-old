@@ -11,44 +11,44 @@ brew upgrade
 
 apps=(
     cmake
-	ctags
+    ctags
     coreutils
-	diff-so-fancy
+    diff-so-fancy
     dockutil
     ffmpeg
     fasd
-	ghq
-	git
-	git-flow
-	git-when-merged
-	glide
-	go
+    ghq
+    git
+    git-flow
+    git-when-merged
+    glide
+    go
     gnu-sed --with-default-names
     grep --with-default-names
     httpie
     imagemagick
     jq
-	keychain
+    keychain
     mackup
     peco
     psgrep
-	pyenv
-	pyenv-virtualenv
-	pyenv-virtualenvwrapper
-	pyenv
+    pyenv
+    pyenv-virtualenv
+    pyenv-virtualenvwrapper
+    pyenv
     python
-	python3
-	rbenv
-	reattach-to-user-namespace
-	sift
+    python3
+    rbenv
+    reattach-to-user-namespace
+    sift
     ssh-copy-id
-	sudolikeaboss
+    sudolikeaboss
     tmux
     tree
-    vim
+    vim --with-override-system-vi --with-lua
     wget
-	yarn
-	youtube-dl
+    yarn
+    youtube-dl
 )
 
 brew install "${apps[@]}"

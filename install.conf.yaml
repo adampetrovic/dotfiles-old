@@ -11,6 +11,7 @@
     ~/.hushlogin: shell/hushlogin
     ~/.ideavimrc: vim/vimrc
     ~/.inputrc: input/inputrc
+    ~/.iterm: iterm
     ~/.psqlrc: postgresql/psqlrc
     ~/.pythonrc: python/pythonrc
     ~/.pylintrc: python/pylintrc
@@ -29,6 +30,7 @@
 - shell:
     - [mkdir -p ~/.config, Creating config directory]
     - [mkdir -p ~/.ssh/master, Creating SSH ControlMaster directory]
+    - [mkdir -p ~/Pictures/screenshots, Creating screenshots directory]
     - 
         command: source install/brew.sh
         stdin: true
@@ -49,3 +51,4 @@
         description: Applying MacOS customisations
     - [source install/ruby.sh, Installing Ruby + Packages]
     - [source install/dock.sh, Applying Dock preferences]
+    - [source install/atom.sh, Installing Atom dependencies]

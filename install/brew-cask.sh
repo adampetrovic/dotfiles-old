@@ -5,21 +5,25 @@ echo "brew-cask.sh starting."
 brew tap caskroom/cask
 brew tap caskroom/versions
 brew tap caskroom/fonts
+brew tap buo/cask-upgrade
 
 # install packages
 apps=(
     1password
     alfred
+    atom
     caffeine
     charles
     dash
     dbvisualizer
     dropbox
+    etcher
     google-drive
     google-chrome
     google-chrome-canary
     iterm2
     istat-menus
+    kindle
     paw
     private-internet-access
     sketch
@@ -30,6 +34,7 @@ apps=(
     telegram
     tor-browser
     vlc
+    wireshark
 )
 
 brew cask install "${apps[@]}"

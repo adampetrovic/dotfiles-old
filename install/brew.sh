@@ -42,6 +42,7 @@ apps=(
     reattach-to-user-namespace
     sift
     ssh-copy-id
+    sshfs
     sudolikeaboss
     tmux
     tree

@@ -236,6 +236,3 @@ sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setstealthmode on
 # SSD settings
 ###############################################################################
 echo "Applying SSD"
-
-# Disable local Time Machine snapshots
-sudo tmutil disablelocal

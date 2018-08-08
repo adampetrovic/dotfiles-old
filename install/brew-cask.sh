@@ -10,29 +10,26 @@ brew tap buo/cask-upgrade
 # install packages
 apps=(
     1password
+    adobe-creative-cloud
     alfred
+    appcleaner
     atom
+    bartender
     caffeine
-    charles
-    dash
-    dbvisualizer
     dropbox
     etcher
-    google-drive
+    google-drive-file-stream
     google-chrome
-    google-chrome-canary
     iterm2
     istat-menus
     kindle
-    paw
     private-internet-access
     sketch
     sourcetree
     spectacle
     spotify
-    sublime-text
     telegram
-    tor-browser
+    torbrowser
     vlc
     wireshark
 )
@@ -40,7 +37,7 @@ apps=(
 brew cask install "${apps[@]}"
 
 # Quick Look Plugins (https://github.com/sindresorhus/quick-look-plugins)
-brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql webpquicklook suspicious-package && qlmanage -r
+brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzip webpquicklook suspicious-package && qlmanage -r
 
 # install fonts
 fonts=(

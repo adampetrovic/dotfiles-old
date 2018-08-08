@@ -42,8 +42,6 @@ apps=(
     reattach-to-user-namespace
     sift
     ssh-copy-id
-    sshfs
-    sudolikeaboss
     tmux
     tree
     vim --with-override-system-vi --with-lua

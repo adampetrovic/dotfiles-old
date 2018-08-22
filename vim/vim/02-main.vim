@@ -1,7 +1,7 @@
 set background=dark " Nicer colour scheme for darker terminal backgrounds
 
 set t_Co=256                      " Make vim aware of 256 colorspace
-colorscheme molokai
+colorscheme brogrammer
 
 syntax enable " syntax highlighting
 filetype plugin indent on

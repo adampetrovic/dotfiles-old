@@ -11,27 +11,21 @@ brew tap buo/cask-upgrade
 apps=(
     1password
     adobe-creative-cloud
-    alfred
     appcleaner
     atom
     bartender
     caffeine
-    dropbox
     etcher
     google-drive-file-stream
     google-chrome
     iterm2
     istat-menus
-    kindle
     private-internet-access
-    sketch
-    sourcetree
+    snip
     spectacle
     spotify
     telegram
     torbrowser
-    vlc
-    wireshark
 )
 
 brew cask install "${apps[@]}"

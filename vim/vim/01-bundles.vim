@@ -32,30 +32,23 @@ endif
 NeoBundleFetch 'Shougo/neobundle.vim'
 
 NeoBundle 'tomasr/molokai'
+NeoBundle 'marciomazza/vim-brogrammer-theme'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'tpope/vim-git'
 NeoBundle 'tpope/vim-surround'
 NeoBundle 'ctrlpvim/ctrlp.vim'
-NeoBundle 'vim-scripts/taglist.vim'
 NeoBundle 'mattn/gist-vim'
 NeoBundle 'mattn/webapi-vim'
 NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'vim-airline/vim-airline'
 NeoBundle 'vim-airline/vim-airline-themes'
-NeoBundle 'scrooloose/syntastic'
+"NeoBundle 'scrooloose/syntastic'
 NeoBundle 'scrooloose/nerdcommenter'
-NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'Shougo/neocomplete.vim'
 NeoBundle 'majutsushi/tagbar'
 
 " Language plugins
-NeoBundle 'solarnz/arcanist.vim'
-NeoBundle 'solarnz/thrift.vim'
-NeoBundle "groenewege/vim-less"
-NeoBundle "rodjek/vim-puppet"
-NeoBundle "fatih/vim-go"
-NeoBundle "rust-lang/rust.vim"
-NeoBundle "davidhalter/jedi-vim"
+NeoBundle 'sheerun/vim-polyglot'
 
 call neobundle#end()
 

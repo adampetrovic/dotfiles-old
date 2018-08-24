@@ -233,6 +233,10 @@ sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setallowsigned off
 sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setstealthmode on
 
 ###############################################################################
-# SSD settings
+# Homebrew Settings
 ###############################################################################
-echo "Applying SSD"
+echo "Installing Homebrew"
+if [ ! -f /usr/local/bin/brew ]
+then
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+fi

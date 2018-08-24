@@ -3,6 +3,7 @@
 - link:
 
     ~/.bin: bin
+    ~/.Brewfile: brew/Brewfile
     ~/.config/git: git
     ~/.ctags: ctags/ctags
     ~/.editrc: input/editrc
@@ -31,17 +32,6 @@
     - [mkdir -p ~/.config, Creating config directory]
     - [mkdir -p ~/.ssh/master, Creating SSH ControlMaster directory]
     - [mkdir -p ~/Pictures/screenshots, Creating screenshots directory]
-    - 
-        command: source install/brew.sh
-        stdin: true
-        stdout: true
-        description: Installing Brew + Packages
-    - 
-        command: source install/brew-cask.sh
-        stdin: true
-        stderr: true
-        stdout: true
-        description: Installing Brew-Cask + Packages
     - [source install/directories.sh, Creating default directories]
     - 
         command: source install/macos.sh
@@ -49,6 +39,8 @@
         stderr: true
         stdout: true
         description: Applying MacOS customisations
+    - [brew bundle --global, Install brew packages]
     - [source install/ruby.sh, Installing Ruby + Packages]
+    - [source install/python.sh, Installing Python + Packages]
     - [source install/dock.sh, Applying Dock preferences]
     - [source install/atom.sh, Installing Atom dependencies]

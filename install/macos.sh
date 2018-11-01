@@ -43,6 +43,10 @@ defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 # Check for software updates daily, not just once per week
 defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
 
+# Dark menubar and dock only, in Mojave. NOTE: You still need to enable Dark Mode in the 
+# System Preferences UI
+defaults write -g NSRequiresAquaSystemAppearance -bool Yes
+
 # Clock
 defaults write com.apple.menuextra.clock IsAnalog -bool false
 defaults write com.apple.menuextra.clock DateFormat -string "EEE d MMM  HH:mm"

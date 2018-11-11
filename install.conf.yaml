@@ -28,6 +28,9 @@
     ~/.zsh: zsh/zsh
     ~/.zshrc: zsh/zshrc
 
+- brewfile:
+    - brew/Brewfile
+
 - shell:
     - [mkdir -p ~/.config, Creating config directory]
     - [mkdir -p ~/.ssh/master, Creating SSH ControlMaster directory]
@@ -39,8 +42,7 @@
         stderr: true
         stdout: true
         description: Applying MacOS customisations
-    - [brew bundle --global, Install brew packages]
     - [source install/ruby.sh, Installing Ruby + Packages]
     - [source install/python.sh, Installing Python + Packages]
     - [source install/dock.sh, Applying Dock preferences]
-    - [source install/atom.sh, Installing Atom dependencies]
+    - [source install/vs-code.sh, Installing VS Code extensions]

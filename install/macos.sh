@@ -235,12 +235,3 @@ sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setallowsigned off
 
 # Enable stealth mode
 sudo /usr/libexec/ApplicationFirewall/socketfilterfw --setstealthmode on
-
-###############################################################################
-# Homebrew Settings
-###############################################################################
-echo "Installing Homebrew"
-if [ ! -f /usr/local/bin/brew ]
-then
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-fi

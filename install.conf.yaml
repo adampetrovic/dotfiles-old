@@ -45,4 +45,4 @@
     - [source install/ruby.sh, Installing Ruby + Packages]
     - [source install/python.sh, Installing Python + Packages]
     - [source install/dock.sh, Applying Dock preferences]
-    - [source install/vs-code.sh, Installing VS Code extensions]
+    - [source install/vscode.sh, Installing VS Code extensions]

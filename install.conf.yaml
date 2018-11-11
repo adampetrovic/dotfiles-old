@@ -1,7 +1,6 @@
 - clean: ['~', '~/.config']
 
 - link:
-
     ~/.bin: bin
     ~/.Brewfile: brew/Brewfile
     ~/.config/git: git
@@ -13,6 +12,7 @@
     ~/.ideavimrc: vim/vimrc
     ~/.inputrc: input/inputrc
     ~/.iterm: iterm
+    ~/.mackup.cfg: mackup/mackup.cfg
     ~/.psqlrc: postgresql/psqlrc
     ~/.pythonrc: python/pythonrc
     ~/.pylintrc: python/pylintrc

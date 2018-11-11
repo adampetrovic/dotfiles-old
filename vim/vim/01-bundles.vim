@@ -30,8 +30,6 @@ endif
 
 " Allow NeoBundle to update itself O.o
 NeoBundleFetch 'Shougo/neobundle.vim'
-
-NeoBundle 'tomasr/molokai'
 NeoBundle 'marciomazza/vim-brogrammer-theme'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'tpope/vim-git'

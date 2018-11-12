@@ -1,6 +1,9 @@
 [submodule "dotbot"]
-	path = dotbot
+	path = meta/dotbot
 	url = https://github.com/anishathalye/dotbot
 [submodule "dotbot-brew"]
-	path = dotbot-brew
+	path = meta/dotbot-brew
 	url = https://github.com/d12frosted/dotbot-brew.git
+[submodule "meta/dotbot-apt-get"]
+	path = meta/dotbot-apt-get
+	url = https://github.com/rubenvereecken/dotbot-apt-get

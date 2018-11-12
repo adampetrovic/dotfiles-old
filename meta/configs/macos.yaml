@@ -1,0 +1,8 @@
+- shell:
+    - 
+        command: source install/macos.sh
+        stdin: true
+        stderr: true
+        stdout: true
+        description: Applying MacOS customisations
+    - [source install/dock.sh, Applying Dock preferences]

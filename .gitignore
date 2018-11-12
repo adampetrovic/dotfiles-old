@@ -9,6 +9,7 @@
 *~
 *.sublime-*
 *.d/localhost
+*.zwc
 
 ssh/
 
@@ -22,6 +23,3 @@ gnupg/private*
 gnupg/*~
 task/task/*.data
 vim/vim/bundle*
-
-# dotfiles specific ignore
-30-atlassian.zsh

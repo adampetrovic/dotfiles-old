@@ -1,0 +1,6 @@
+- link:
+    ~/.pythonrc: python/pythonrc
+    ~/.pylintrc: python/pylintrc
+
+- shell:
+    - [source install/python.sh, Installing Python + Packages]

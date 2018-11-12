@@ -10,7 +10,10 @@ extensions=(
     "vscodevim.vim"
 )
 
-code --force --install-extension "${extensions[@]}"
+for i in "${extensions[@]}"
+do
+    code --force --install-extension "${i}"
+done
 
 # Finished
 echo "$(basename "$0") complete."

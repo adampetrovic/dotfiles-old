@@ -8,6 +8,7 @@ echo "vscode.sh starting."
 extensions=(
     "ms-vscode.Go"
     "vscodevim.vim"
+    "eamodio.gitlens"
 )
 
 for i in "${extensions[@]}"

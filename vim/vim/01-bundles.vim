@@ -40,13 +40,14 @@ NeoBundle 'mattn/webapi-vim'
 NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'vim-airline/vim-airline'
 NeoBundle 'vim-airline/vim-airline-themes'
-"NeoBundle 'scrooloose/syntastic'
+NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'scrooloose/nerdcommenter'
 NeoBundle 'Shougo/neocomplete.vim'
 NeoBundle 'majutsushi/tagbar'
 
 " Language plugins
 NeoBundle 'sheerun/vim-polyglot'
+NeoBundle 'fatih/vim-go'
 
 call neobundle#end()
 

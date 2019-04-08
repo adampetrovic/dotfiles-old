@@ -1,2 +1,10 @@
+- link:
+    ~/.Brewfile: brew/personal
+
 - brewfile:
-    - brew/personal
+    - ~/.Brewfile
+
+- shell:
+    - [brew bundle cleanup --global --zap --force, Cleanup unused brew packages]
+    - [mas upgrade, Upgrading applications installed via App Store]
+    - [brew cu -afy, Force upgrade brew cask applications]

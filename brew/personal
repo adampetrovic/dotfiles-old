@@ -5,9 +5,14 @@ tap "buo/cask-upgrade"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 
+# developer / system dependencies
 brew "autoconf"
 brew "cmake"
 brew "coreutils"
+brew "readline"
+brew "xz"
+brew "zlib"
+
 brew "ctags"
 brew "diff-so-fancy"
 brew "docker-compose-completion"
@@ -42,12 +47,14 @@ brew "tmux"
 brew "tmuxinator-completion"
 brew "tree"
 brew "vim", args: ["with-lua", "with-override-system-vi"]
+brew "watch"
 brew "wget"
 brew "yarn"
 brew "youtube-dl"
 
-cask "1password6"
+cask "1password"
 cask "adobe-creative-cloud"
+cask "alfred"
 cask "appcleaner"
 cask "bartender"
 cask "betterzip"
@@ -66,8 +73,7 @@ cask "qlcolorcode"
 cask "qlmarkdown"
 cask "qlprettypatch"
 cask "qlstephen"
-cask "quicklook-csv"
-cask "quicklook-json"
+cask "sloth"
 cask "snagit4"
 cask "spectacle"
 cask "spotify"
@@ -76,4 +82,9 @@ cask "telegram"
 cask "tor-browser"
 cask "visual-studio-code"
 cask "vlc"
-cask "webpquicklook"
+
+# mac app store
+mas "Bear", id: 1091189122 
+mas "Things3", id: 904280696
+mas "Reeder", id: 880001334
+mas "Be Focused Pro", id: 961632517 

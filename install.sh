@@ -2,6 +2,13 @@
 
 set -e
 
+die () {
+    echo >&2 "$@"
+    exit 1
+}
+
+[ "$#" -eq 1 ] || die "Please provide a config to apply. {personal, server, work}"
+
 BASE_CONFIG="base"
 CONFIG_SUFFIX=".yaml"
 
@@ -18,6 +25,9 @@ BASE_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "${BASE_DIR}"
 git submodule update --init --recursive --remote
 
+if [ ! -f "${META_DIR}/${PROFILES_DIR}/$1" ]; then
+    die "Profile '$1' not found."
+fi
 
 while IFS= read -r config; do
     CONFIGS+=" ${config}"

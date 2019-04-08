@@ -1,3 +1,6 @@
 - link:
     ~/.vim: vim/vim
     ~/.vimrc: vim/vimrc
+
+- shell:
+    - [mkdir -p ~/.config/vim/tmp/undo, Creating persistent undo dir]

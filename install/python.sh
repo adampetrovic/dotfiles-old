@@ -10,10 +10,10 @@ if [[ -f "/usr/local/bin/pyenv" ]] ; then
     # install python versions
     echo "installing python versions..."
     pyenv install 2.7.15 
-    pyenv install 3.7.0
+    pyenv install 3.7.3
 
     # set the global version
-    pyenv global 3.7.0
+    pyenv global 3.7.3
 
     pyenv rehash
 

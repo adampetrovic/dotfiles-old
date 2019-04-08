@@ -4,6 +4,10 @@ export PATH="$HOME/.bin:/usr/local/bin:$PATH"
 # xdg
 export XDG_CACHE_HOME="$HOME/.fonts"
 
+# default compile flags
+export LDFLAGS="-L/usr/local/opt/zlib/lib"
+export CPPFLAGS="-I/usr/local/opt/zlib/include"
+
 export EDITOR='vim'
 
 # terminal settings

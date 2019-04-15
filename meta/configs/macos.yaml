@@ -6,3 +6,10 @@
         stdout: true
         description: Applying MacOS customisations
     - [source install/dock.sh, Applying Dock preferences]
+    - [source install/op.sh, Initialising 1Password CLI]
+    - 
+        command: source install/vpn.sh
+        stdin: true
+        stderr: true
+        stdout: true
+        description: Install VPN profile]

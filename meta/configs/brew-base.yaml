@@ -1,0 +1,13 @@
+- brewfile:
+    - ~/.Brewfile
+
+- shell:
+    - [brew cleanup, Cleanup unused brew packages]
+    - [brew bundle cleanup --global --zap --force, Cleanup unused brew bundle packages]
+    - [mas upgrade, Upgrading applications installed via App Store]
+    -
+      command: brew cu -ay
+      stdin: true
+      stdout: true
+      description: Upgrade brew cask applications (non-latest)
+      quiet: false

@@ -39,5 +39,5 @@ shift
 for config in ${CONFIGS} ${@}; do
     echo -e "\nConfigure $config"
     configContent="$(<"${BASE_DIR}/${META_DIR}/${BASE_CONFIG}${CONFIG_SUFFIX}")\n$(<"${BASE_DIR}/${META_DIR}/${CONFIG_DIR}/${config}${CONFIG_SUFFIX}")"
-    "${BASE_DIR}/${META_DIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASE_DIR}" --plugin-dir ${META_DIR}/dotbot-brew --plugin-dir ${META_DIR}/dotbot-apt-get -c <(echo -e "$configContent")
+    "${BASE_DIR}/${META_DIR}/${DOTBOT_DIR}/${DOTBOT_BIN}" -d "${BASE_DIR}" --plugin-dir ${META_DIR}/dotbot-brew -c <(echo -e "$configContent")
 done

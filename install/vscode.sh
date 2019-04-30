@@ -10,6 +10,7 @@ extensions=(
     "vscodevim.vim"
     "eamodio.gitlens"
     "ms-python.python"
+    "fabiospampinato.vscode-monokai-night"
 )
 
 for i in "${extensions[@]}"

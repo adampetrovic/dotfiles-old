@@ -30,8 +30,8 @@ brew "git-flow"
 brew "git-when-merged"
 brew "go"
 brew "glide"
-brew "gnu-sed", args: ["with-default-names"]
-brew "grep", args: ["with-default-names"]
+brew "gnu-sed"
+brew "grep"
 brew "httpstat"
 brew "python"
 brew "httpie"
@@ -53,7 +53,7 @@ brew "ssh-copy-id"
 brew "tmux"
 brew "tmuxinator-completion"
 brew "tree"
-brew "vim", args: ["with-lua", "with-override-system-vi"]
+brew "vim"
 brew "vault"
 brew "watch"
 brew "wget"
@@ -62,6 +62,7 @@ brew "yarn"
 cask "1password"
 cask "1password-cli"
 cask "adobe-creative-cloud"
+cask "alacritty"
 cask "alfred"
 cask "appcleaner"
 cask "bartender"
@@ -84,7 +85,6 @@ cask "qlprettypatch"
 cask "qlstephen"
 cask "slack"
 cask "sloth"
-cask "snagit4"
 cask "spectacle"
 cask "spotify"
 cask "suspicious-package"
@@ -94,7 +94,9 @@ cask "visual-studio-code"
 cask "zoomus"
 
 # mac app store
+mas "Annotate", id: 918207447
 mas "Be Focused Pro", id: 961632517 
 mas "Bear", id: 1091189122 
 mas "Reeder", id: 880001334
 mas "Things3", id: 904280696
+mas "Tweetbot3", id: 1384080005

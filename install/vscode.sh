@@ -11,6 +11,8 @@ extensions=(
     "eamodio.gitlens"
     "ms-python.python"
     "fabiospampinato.vscode-monokai-night"
+    "alefragnani.project-manager"
+    "vscode-icons-team.vscode-icons"
 )
 
 for i in "${extensions[@]}"

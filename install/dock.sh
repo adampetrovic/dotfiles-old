@@ -5,10 +5,11 @@
 
 dockutil --no-restart --remove all
 dockutil --no-restart --add "/Applications/Google Chrome.app"
-dockutil --no-restart --add "/Applications/Calendar.app"
+dockutil --no-restart --add "/Applications/Fantastical 2.app"
 dockutil --no-restart --add "/Applications/iTerm.app"
 dockutil --no-restart --add "/Applications/Visual Studio Code.app"
 dockutil --no-restart --add "/Applications/Things3.app"
+dockutil --no-restart --add "/Applications/Bear.app"
 dockutil --no-restart --add "/Applications/Telegram.app"
 dockutil --no-restart --add "/Applications/Spotify.app"
 dockutil --no-restart --add "/Applications/Reeder.app"

@@ -1,0 +1,35 @@
+{
+    "git.autofetch": true,
+    "gitlens.gitExplorer.location": "scm",
+    "gitlens.historyExplorer.enabled": false,
+    "go.gopath": "~/code/go",
+    "window.zoomLevel": 0,
+    "workbench.startupEditor": "none",
+    "python.venvPath": "~/.local/share/virtualenvs",
+    "gitlens.views.repositories.location": "scm",
+    "gitlens.views.fileHistory.enabled": false,
+    "gitlens.views.lineHistory.enabled": false,
+    "python.pythonPath": "",
+    "diffEditor.ignoreTrimWhitespace": true,
+    "gitlens.mode.active": "review",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "python.jediEnabled": false,
+    "projectManager.git.baseFolders": [
+        "$home/code/"
+    ],
+    "projectManager.git.ignoredFolders": [
+        "node_modules", 
+        "out", 
+        "typings", 
+        "test",
+    ],
+    "projectManager.git.maxDepthRecursion": 1,
+    "projectManager.groupList": true
+}

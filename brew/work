@@ -93,8 +93,11 @@ cask "istat-menus"
 cask "iterm2"
 cask "kindle"
 cask "little-snitch"
+<<<<<<< HEAD
 cask "mullvad"
 cask "pycharm"
+=======
+>>>>>>> 061a051 (Various work updates)
 cask "qlcolorcode"
 cask "qlmarkdown"
 cask "qlprettypatch"

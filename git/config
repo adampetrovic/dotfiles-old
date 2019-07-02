@@ -146,6 +146,11 @@
 [url "git@github.com:"]
     insteadof = github:
 
+[url "git@bitbucket.org:"]
+  insteadOf = https://bitbucket.org/
+[url "git@stash.atlassian.com:7997:"]
+  insteadOf = https://stash.atlassian.com/
+
 [remote "origin"]
 	receivepack = git-receive-pack
 

@@ -12,7 +12,7 @@ dockutil --no-restart --add "/Applications/PyCharm.app"
 dockutil --no-restart --add "/Applications/Things3.app"
 dockutil --no-restart --add "/Applications/Telegram.app"
 dockutil --no-restart --add "/Applications/Spotify.app"
-dockutil --no-restart --add "/Applications/Reeder.app"
+dockutil --no-restart --add "/Applications/Reeder.localized/Reeder.app"
 if [ -d "/Applications/Slack.app" ]; then
     dockutil --no-restart --add "/Applications/Slack.app"
 fi

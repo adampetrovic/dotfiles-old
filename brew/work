@@ -106,6 +106,7 @@ cask "zoomus"
 # mac app store
 mas "Be Focused Pro", id: 961632517 
 mas "Bear", id: 1091189122 
+mas "Parcel", id: 639968404
 mas "Reeder", id: 1449412482
 mas "Things3", id: 904280696
 mas "Tweetbot3", id: 1384080005

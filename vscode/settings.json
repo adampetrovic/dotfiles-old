@@ -5,13 +5,12 @@
     "go.gopath": "~/code/go",
     "window.zoomLevel": 0,
     "workbench.startupEditor": "none",
-    "python.venvPath": "~/.local/share/virtualenvs",
+    "python.venvPath": "~/Library/Caches/pypoetry/virtualenvs",
     "gitlens.views.repositories.location": "scm",
     "gitlens.views.fileHistory.enabled": false,
     "gitlens.views.lineHistory.enabled": false,
     "python.pythonPath": "",
     "diffEditor.ignoreTrimWhitespace": true,
-    "gitlens.mode.active": "review",
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "files.exclude": {
@@ -28,8 +27,13 @@
         "node_modules", 
         "out", 
         "typings", 
-        "test",
+        "test"
     ],
     "projectManager.git.maxDepthRecursion": 1,
-    "projectManager.groupList": true
+    "projectManager.groupList": true,
+    "projectManager.vscode.baseFolders": [
+        "$home/workspaces/"
+    ],
+    "go.useLanguageServer": true,
+    "explorer.confirmDelete": false
 }

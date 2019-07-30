@@ -1,0 +1,7 @@
+Include config.d/*
+
+Host git.adampetrovic.com
+  Hostname git.adampetrovic.com
+  User git
+  Port 2222
+  PreferredAuthentications publickey

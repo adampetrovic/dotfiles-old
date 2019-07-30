@@ -1,2 +1,5 @@
 - shell:
     - [mkdir -p ~/.ssh/master, Creating SSH ControlMaster directory]
+    - [mkdir -p ~/.ssh/config.d, Creating SSH Config Subdir]
+- link:
+    ~/.ssh/config: ssh/config

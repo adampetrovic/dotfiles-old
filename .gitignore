@@ -11,8 +11,6 @@
 *.d/localhost
 *.zwc
 
-ssh/
-
 gnupg/secring.gpg
 gnupg/pubring.gpg
 gnupg/trustdb.gpg

@@ -2,7 +2,7 @@
 echo "vscode.sh starting."
 
 # Install Homebrew
-[[ ! -f /usr/local/bin/code ]] && echo "Unable to find VS Code binary"
+[[ ! -f /usr/local/bin/code ]] && echo "Unable to find VS Code binary" && exit 1
 
 # Install packages
 extensions=(

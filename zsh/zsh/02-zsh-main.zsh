@@ -20,6 +20,9 @@ bindkey "^[[8~" end-of-line
 export ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg_bold[red]%}!"
 export ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg_bold[green]%}?"
 
+# turn off the timestamp on rprompt
+unset RPROMPT
+
 zmodload zsh/terminfo
 bindkey "$terminfo[kcuu1]" history-substring-search-up
 bindkey "$terminfo[kcud1]" history-substring-search-down

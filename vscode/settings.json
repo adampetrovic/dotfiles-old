@@ -10,6 +10,7 @@
     "gitlens.views.fileHistory.enabled": false,
     "gitlens.views.lineHistory.enabled": false,
     "python.pythonPath": "",
+    "java.home": "/Library/Java/JavaVirtualMachines/openjdk-12.0.1.jdk/Contents/Home",
     "diffEditor.ignoreTrimWhitespace": true,
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
@@ -35,5 +36,6 @@
         "$home/workspaces/"
     ],
     "go.useLanguageServer": true,
-    "explorer.confirmDelete": false
+    "explorer.confirmDelete": false,
+    "vsicons.dontShowNewVersionMessage": true
 }

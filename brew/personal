@@ -80,6 +80,7 @@ cask "qlcolorcode"
 cask "qlmarkdown"
 cask "qlprettypatch"
 cask "qlstephen"
+cask "quicklook-json"
 cask "sloth"
 cask "spectacle"
 cask "spotify"
@@ -90,9 +91,9 @@ cask "visual-studio-code"
 cask "vlc"
 
 # mac app store
-mas "Annotate", id: 918207447
-mas "Bear", id: 1091189122 
-mas "Things3", id: 904280696
-mas "Reeder", id: 880001334
 mas "Be Focused Pro", id: 961632517 
+mas "Bear", id: 1091189122 
+mas "Reeder", id: 1449412482
+mas "Things3", id: 904280696
 mas "Tweetbot3", id: 1384080005
+mas "Xnip", id: 1221250572

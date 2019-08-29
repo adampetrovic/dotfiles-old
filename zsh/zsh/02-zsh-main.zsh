@@ -1,5 +1,6 @@
 # paths
-export PATH="$HOME/.bin:/usr/local/bin:$PATH"
+export PATH="$HOME/.bin:/usr/local/bin:/usr/local/sbin:$PATH"
+fpath+=/usr/local/share/zsh/site-functions
 
 # xdg
 export XDG_CACHE_HOME="$HOME/.fonts"

@@ -13,3 +13,12 @@ VPN_SHARED_SECRET=$(op get item $OP_UUID | jq -r '.details.sections[].fields[]? 
 
 echo "Creating VPN"
 sudo macosvpn create --force --l2tp "Home VPN" --endpoint ${VPN_ADDR} --username ${VPN_USERNAME} --password ${VPN_PPP_PASSWORD} --shared-secret ${VPN_SHARED_SECRET}
+
+
+echo "Adding VPN ip-up script"
+cat <<EOF >> /etc/ppp/ip-up
+#!/bin/sh
+# remove the default 10/22 route to default back to ppp0
+/sbin/route delete -net 10/22 -interface en0
+EOF
+sudo chmod +x /etc/ppp/ip-up

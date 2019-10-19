@@ -16,6 +16,7 @@ sudo macosvpn create --force --l2tp "Home VPN" --endpoint ${VPN_ADDR} --username
 
 
 echo "Adding VPN ip-up script"
+sudo touch /etc/ppp/ip-up
 cat <<EOF >> /etc/ppp/ip-up
 #!/bin/sh
 # remove the default 10/22 route to default back to ppp0

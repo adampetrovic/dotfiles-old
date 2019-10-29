@@ -7,12 +7,16 @@ dockutil --no-restart --remove all
 dockutil --no-restart --add "/Applications/Google Chrome.app"
 dockutil --no-restart --add "/Applications/Fantastical 2.app"
 dockutil --no-restart --add "/Applications/iTerm.app"
-dockutil --no-restart --add "/Applications/Visual Studio Code.app"
+dockutil --no-restart --add "/Applications/Goland.app"
+dockutil --no-restart --add "/Applications/PyCharm.app"
 dockutil --no-restart --add "/Applications/Things3.app"
 dockutil --no-restart --add "/Applications/Bear.app"
 dockutil --no-restart --add "/Applications/Telegram.app"
 dockutil --no-restart --add "/Applications/Spotify.app"
 dockutil --no-restart --add "/Applications/Reeder.localized/Reeder.app"
+if [ -d "/Applications/Slack.app" ]; then
+    dockutil --no-restart --add "/Applications/Slack.app"
+fi
 dockutil --no-restart --add "/Applications/System Preferences.app"
 dockutil --add '/Applications' --view grid --display folder --sort name
 dockutil --add '~/Downloads' --view grid --display folder --sort dateadded

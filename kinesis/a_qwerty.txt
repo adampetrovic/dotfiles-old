@@ -1,0 +1,58 @@
+* =====  apetrovic keyboard layout for Kinesis Advantage2 =====
+* how to install:
+* - activate Power User Mode (PUM): [progm]+[shift]+[f1]
+* - mount the partition (in PUM): [progm]+f1
+* - copy this file overwriting the file in /Volumes/ADVANTAGE2/active/<file>.txt
+* - umount the partition: [progm]+f1
+* - exit PUM: [progm]+[shift]+[f1]
+* - Active the layout at any time with: [progm]+[a]
+* 
+* Keyboard Settings:
+*  Global Macro Playback Speed: 9 (progm + F10 + 9)
+
+* ====================
+* thumb cluster remap
+* ====================
+
+* left thumb cluster
+[lctrl]>[lctrl]
+[lalt]>[lwin]
+[bspace]>[space]
+[delete]>[bspace]
+[home]>[home]
+[end]>[end]
+
+* right thumb cluster
+[rwin]>[ralt]
+[rctrl]>[rwin]
+[space]>[enter]
+[enter]>[delete]
+[pup]>[pup]
+[pdown]>[pdown]
+
+* ===============
+* Misc key remaps
+* ===============
+
+* swap Escape and Caps keys
+[escape]>[caps]
+[caps]>[escape]
+
+
+* =================
+* Macro Definitions
+* =================
+
+* ctrl+s - take screenshot using Xnip
+{lctrl}{s}>{-lwin}{-lshift}{x}{+lshift}{+lwin}
+
+* ctrl+enter - things3 quick entry
+{lctrl}{space}>{-lctrl}{space}{+lctrl}
+
+* spectacle remapping
+* ctrl+left arrow - move window to left half
+{lctrl}{left}>{-lalt}{-lwin}{left}{+lwin}{+lalt}
+* ctrl+right arrow - move window to right half
+{lctrl}{right}>{-lalt}{-lwin}{right}{+lwin}{+lwin}
+* ctrl+f - make window full screen
+{lctrl}{f}>{-lalt}{-lwin}{f}{+lwin}{+lalt}

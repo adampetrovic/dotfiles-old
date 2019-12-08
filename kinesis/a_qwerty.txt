@@ -53,6 +53,6 @@
 * ctrl+left arrow - move window to left half
 {lctrl}{left}>{-lalt}{-lwin}{left}{+lwin}{+lalt}
 * ctrl+right arrow - move window to right half
-{lctrl}{right}>{-lalt}{-lwin}{right}{+lwin}{+lwin}
+{lctrl}{right}>{-lalt}{-lwin}{right}{+lwin}{+lalt}
 * ctrl+f - make window full screen
 {lctrl}{f}>{-lalt}{-lwin}{f}{+lwin}{+lalt}

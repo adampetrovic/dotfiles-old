@@ -143,14 +143,6 @@
     rex = remote rm
     rem = remote rename
 
-[url "git@github.com:"]
-    insteadof = github:
-
-[url "git@bitbucket.org:"]
-  insteadOf = https://bitbucket.org/
-[url "git@stash.atlassian.com:7997:"]
-  insteadOf = https://stash.atlassian.com/
-
 [remote "origin"]
 	receivepack = git-receive-pack
 
@@ -172,3 +164,16 @@
 	oldHighlight = red bold 52
 	newNormal = green bold
 	newHighlight = green bold 22
+
+[url "ssh://git@stash.atlassian.com:7997/"]
+    insteadof = https://stash.atlassian.com/scm/
+[url "git@bitbucket.org:"]
+    insteadOf = https://bitbucket.org/
+[url "git@github.com:"]
+    insteadOf = https://github.com/
+[url "ssh://git@stash.atlassian.com:7997/"]
+    insteadof = https://stash.atlassian.com/scm/
+[url "git@bitbucket.org:"]
+    insteadOf = https://bitbucket.org/
+[url "git@github.com:"]
+    insteadOf = https://github.com/

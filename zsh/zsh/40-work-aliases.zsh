@@ -57,6 +57,9 @@ function sidecar-versions() {
     echo $JSON_RESP | jq
 }
 
+func service-dns() {
+    atlas slauth curl -a service-central -- "https://services.prod.atl-paas.net/api/v2/services/$1/attributes/dns-name" 2>/dev/null | jq -r '.value[].value'
+}
 
 function metric-dimensions() {
     METRIC_URL='https://api.us1.signalfx.com/v2/metrictimeseries'

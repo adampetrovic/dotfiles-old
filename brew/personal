@@ -61,7 +61,6 @@ cask "alfred"
 cask "appcleaner"
 cask "bartender"
 cask "betterzip"
-cask "caffeine"
 cask "balenaetcher"
 cask "fantastical"
 cask "font-source-code-pro"
@@ -90,6 +89,7 @@ cask "tor-browser"
 cask "vlc"
 
 # mac app store
+mas "Amphetamine", id: 937984704
 mas "Be Focused Pro", id: 961632517 
 mas "Bear", id: 1091189122 
 mas "Paprika Recipe Manager 3", id: 1303222628

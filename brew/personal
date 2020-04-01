@@ -90,7 +90,6 @@ cask "vlc"
 
 # mac app store
 mas "Amphetamine", id: 937984704
-mas "Be Focused Pro", id: 961632517 
 mas "Bear", id: 1091189122 
 mas "Paprika Recipe Manager 3", id: 1303222628
 mas "Parcel", id: 639968404

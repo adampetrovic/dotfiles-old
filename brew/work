@@ -39,6 +39,7 @@ brew "git-when-merged"
 brew "go"
 brew "glide"
 brew "gnu-sed"
+brew "go-jira"
 brew "grep"
 brew "httpstat"
 brew "python"
@@ -78,6 +79,7 @@ cask "alfred"
 cask "appcleaner"
 cask "bartender"
 cask "betterzip"
+cask "brainfm"
 cask "dash"
 cask "dbvisualizer"
 cask "docker"
@@ -109,7 +111,6 @@ cask "zoomus"
 
 # mac app store
 mas "Amphetamine", id: 937984704
-mas "Be Focused Pro", id: 961632517 
 mas "Bear", id: 1091189122 
 mas "Parcel", id: 639968404
 mas "Reeder", id: 1449412482

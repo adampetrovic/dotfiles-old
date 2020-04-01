@@ -9,3 +9,7 @@ function _aws_envs {
 }
 
 compctl -K _aws_envs aws
+
+if [[ -f "${HOME}/.config/cloudtoken/bashrc_additions" ]]; then
+    source "${HOME}/.config/cloudtoken/bashrc_additions"
+fi

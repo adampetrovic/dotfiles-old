@@ -5,3 +5,8 @@ Host git.adampetrovic.com
   User git
   Port 2222
   PreferredAuthentications publickey
+
+Host petrovic.network nuc nuc.lan
+    Hostname petrovic.network
+    User adam
+    PreferredAuthentications publickey

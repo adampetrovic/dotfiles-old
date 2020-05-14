@@ -13,7 +13,7 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # General System
 ###############################################################################
 # Set computer name (as done via System Preferences → Sharing)
-_hn="workbook"
+_hn="macbook"
 sudo scutil --set ComputerName "$_hn"
 sudo scutil --set HostName "$_hn"
 sudo scutil --set LocalHostName "$_hn"

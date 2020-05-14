@@ -12,3 +12,5 @@ gkill() { ps aux | grep "$*" | awk '{print $2}' | sudo xargs kill -9; }
 function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
 
 function show-routes() { netstat -nr -f inet; }
+
+alias sleepless="pmset -g assertions | egrep '(PreventUserIdleSystemSleep|PreventUserIdleDisplaySleep)'"

@@ -21,3 +21,4 @@ gnupg/private*
 gnupg/*~
 task/task/*.data
 vim/vim/bundle*
+.tool-versions

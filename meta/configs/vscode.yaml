@@ -1,5 +1,0 @@
-- shell:
-  - [source install/vscode.sh, Installing VS Code extensions]
-  
-- link:
-    ~/Library/Application Support/Code/User/settings.json: vscode/settings.json

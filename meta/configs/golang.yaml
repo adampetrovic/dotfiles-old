@@ -1,0 +1,2 @@
+- shell:
+    - [source install/golang.sh, Installing Golang]

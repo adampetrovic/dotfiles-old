@@ -1,29 +1,29 @@
 #!/usr/bin/env zsh
 
 # Start
-echo "python.sh starting."
+echo "golang.sh starting."
 
 # Install Homebrew
 [[ ! -f $(brew --prefix asdf)/asdf.sh ]] && echo "Unable to find asdf binary" && exit 1
 
-asdf plugin add python
-asdf plugin update python
+asdf plugin add golang
+asdf plugin update golang
 
 # Install and update plugins
 versions=(
-    "3.8.5"
-    "3.7.8"
-    "3.6.11"
-    "2.7.18"
+    "1.13"
+    "1.13.14"
+    "1.14"
+    "1.14.6"
 )
 
 for i in "${versions[@]}"
 do
-    asdf install python ${i}
-    asdf reshim python ${i}
+    asdf install golang ${i}
+    asdf reshim golang ${i}
 done
 
-asdf global python 3.6.11
+asdf global golang 1.14.6
 
 # Finished
 echo "$(basename "$0") complete."

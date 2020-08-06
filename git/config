@@ -52,14 +52,26 @@
 
 [core]
     editor = vim
-    pager = delta --plus-color="#012800" --minus-color="#340001"
+    pager = delta
     whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
+
+[delta]
+    features = line-numbers
+    plus-style = syntax "#003800"
+    minus-style = syntax "#3f0001"
+    #hunk-header-style = omit
+
+[delta "line-numbers"]
+    line-numbers-left-style = cyan
+    line-numbers-right-style = cyan
+    line-numbers-minus-style = 124
+    line-numbers-plus-style = 28
 
 [interactive]
     diffFilter = delta --color-only
 
-#[diff]
-#    tool = vimdiff
+[diff]
+    tool = delta 
 
 [difftool]
     prompt = false

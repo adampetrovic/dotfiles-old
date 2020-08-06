@@ -1,2 +1,6 @@
 - shell:
-    - [source install/atlassian.sh, Installing Atlassian Tools]
+    - 
+        command: source install/atlassian.sh
+        stderr: true
+        stdout: true
+        description: Install Atlassian Tooling

@@ -53,6 +53,7 @@ brew "yarn"
 brew "youtube-dl"
 
 cask "1password"
+cask "1password-cli"
 cask "adobe-creative-cloud"
 cask "alfred"
 cask "appcleaner"

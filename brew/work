@@ -4,9 +4,6 @@ tap "homebrew/cask"
 tap "buo/cask-upgrade"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
-tap "adampetrovic/atlassian", "git@github.com:adampetrovic/homebrew-atlassian.git"
-tap "atlassian/micros", "ssh://git@stash.atlassian.com:7997/micros/micros-cli-homebrew-tap.git"
-tap "atlassian/micros-tap", "ssh://git@stash.atlassian.com:7997/micros/homebrew-tap.git"
 
 # developer / system dependencies
 brew "autoconf"
@@ -16,10 +13,9 @@ brew "readline"
 brew "xz"
 brew "zlib"
 
-# atlassian tools
-brew "vault-helpers"
+# atlassian specific tools
+tap "atlassian/micros", "ssh://git@stash.atlassian.com:7997/micros/homebrew-tap.git"
 brew "atlas-cli"
-brew "micros-cli"
 
 brew "asdf"
 brew "awscli"
@@ -68,17 +64,15 @@ brew "wget"
 brew "yarn"
 
 cask "1password"
+cask "1password-cli"
 cask "adobe-creative-cloud"
-cask "alacritty"
 cask "alfred"
 cask "appcleaner"
 cask "bartender"
 cask "betterzip"
 cask "brainfm"
-cask "dash"
 cask "dbvisualizer"
 cask "docker"
-cask "etcher"
 cask "fantastical"
 cask "font-source-code-pro"
 cask "font-source-code-pro-for-powerline"
@@ -91,7 +85,6 @@ cask "keyboardcleantool"
 cask "kindle"
 cask "little-snitch"
 cask "mullvadvpn"
-cask "notion"
 cask "pycharm"
 cask "qlcolorcode"
 cask "qlmarkdown"
@@ -110,5 +103,4 @@ mas "Bear", id: 1091189122
 mas "Parcel", id: 639968404
 mas "Reeder", id: 1449412482
 mas "Things3", id: 904280696
-mas "Tweetbot3", id: 1384080005
 mas "Xnip", id: 1221250572

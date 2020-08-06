@@ -10,25 +10,31 @@ fi
 
 echo "Running against ${PROFILE} profile"
 
-# Ask for the administrator password upfront
-sudo -v
-
-# Keep-alive: update existing `sudo` time stamp until `.macos` has finished 
-while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 ###############################################################################
 # General System
 ###############################################################################
 # Set computer name (as done via System Preferences → Sharing)
 _hn="macbook"
+source install/1password.sh
+_sudo_uuid=""
 case "$PROFILE" in
 "work")
     _hn="workbook"
+    _sudo_uuid=$(op list items | jq -r '.[] | select(.overview.title == "sudo - Atlassian") | .uuid')
     ;;  
 *)
     _hn="macbook"
+    _sudo_uuid=$(op list items | jq -r '.[] | select(.overview.title == "sudo - Personal") | .uuid')
     ;;  
 esac
+
+# Ask for the administrator password upfront, pass it in as stdin
+_sudo_pw=$(op get item ${_sudo_uuid} | jq -r '.details.password')
+echo -n ${_sudo_pw} | sudo -vS
+
+# Keep-alive: update existing `sudo` time stamp until `.macos` has finished 
+while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 sudo scutil --set ComputerName "$_hn"
 sudo scutil --set HostName "$_hn"

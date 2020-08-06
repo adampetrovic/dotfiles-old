@@ -8,4 +8,6 @@
         stdout: true
         description: Install SSH Keys
 - link:
-    ~/.ssh/config: ssh/config
+    ~/.ssh/config:
+      force: true
+      path: ssh/config

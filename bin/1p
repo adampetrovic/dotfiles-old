@@ -1,0 +1,116 @@
+#!/usr/bin/env bash
+
+# wrapper for 1password cli (op), adds session management capability
+
+main() {
+    # directly pass inactive session args
+    case "$1" in
+        "" )
+            op;;
+        --help )
+            op --help;;
+        --version )
+            op --version;;
+        signin )
+            if [[ ! "$2" =~ ^\-.* ]]; then
+                OP_SUBDOMAIN=${2%%.*}
+            fi
+            regen_session $@ || return 1;;
+        signout )
+            rm_session;;
+        update )
+            op update;;
+        * ) # active session required for everything else
+            # capture stdin early
+            local STDIN=$(capture_stdin)
+
+            regen_session || return 1
+
+            params=""
+            for x in "${@}"; do
+                # try to figure out if quoting was required for the $x
+                if [[ "${x}" =~ " |'" ]]; then
+                    x="\""${x}"\""
+                fi
+                params="${params} ${x}"
+            done
+
+            # some op methods use stdin
+            if [ "$STDIN" ]; then
+                echo -E "$STDIN" | eval "op ${params}"
+            else
+                eval "op ${params}"
+            fi
+            ;;
+    esac
+}
+
+# destroy the op session by using op signout, destroying the env and removing the session cache
+rm_session() {
+    local SESSION_CACHE="${HOME}/.op/1p_session_cache"
+    \rm -f $SESSION_CACHE
+    op signout
+}
+
+# check for active (or valid cached) op session and recreate session, otherwise signin and cache
+regen_session() {
+    local SESSION_CACHE="${HOME}/.op/1p_session_cache"
+
+    # OP_SUBDOMAIN should be set in signin requests
+    if [ -z "${OP_SUBDOMAIN}" ]; then
+        # but if it isnt, we should be able to access the latest used subdomain in the 1p config
+        OP_SUBDOMAIN=$(cat ${HOME}/.op/config 2> /dev/null | jq '.latest_signin' -r)
+        if [ -z "${OP_SUBDOMAIN}" ]; then
+            echo "Unable to locate session name from environment or ~/.op/config. Please create with:\n\n   1P signin <signinaddress> <emailaddress> <secretkey>"
+            return 1
+        fi
+    fi
+
+    # dynamic variables named in Bash... because life isnt hard enough!
+    # this is the magic of allowing terminal-session indepenant 1p sessions via a custom session cache
+    [ -n "${(P)${:-OP_SESSION_${OP_SUBDOMAIN}}}" ] || [ -f $SESSION_CACHE ] && export OP_SESSION_${OP_SUBDOMAIN}=$(cat $SESSION_CACHE)
+
+    op get account &> /dev/null && return 0
+
+    # we cant pipe to a script that also provides a stdin prompt, so detect and exit
+    if [ -p /dev/stdin ]; then
+        echo "1Password login required, but stdin detected (which cant be used with 1p signup). Please use '1p signup' directly and try the command again." >&2
+        return 1
+    fi
+
+    if [ -n "$1" ] && [ "$1" == "signin" ]; then
+        # if a signin command, pass all parameters through untouched
+        local SESSION="$(op $@ --output=raw 2> /dev/null)"
+    else
+        local SESSION="$(op signin ${OP_SUBDOMAIN} --output=raw 2> /dev/null)"
+    fi
+
+    if [ -z "$SESSION" ]; then
+        echo "Unable to log in to 1Password." >&2
+        return 1
+    fi
+
+    echo $SESSION >! $SESSION_CACHE
+
+    export OP_SESSION_${OP_SUBDOMAIN}=$SESSION
+
+    if [ -z "${(P)${:-OP_SESSION_${OP_SUBDOMAIN}}}" ]; then
+        echo "Unknown error whilst trying to sign into 1password, cannot continue" >&2
+        return 1
+    fi
+}
+
+capture_stdin() {
+    if [ -p /dev/stdin ]; then
+        echo -E $(cat)
+    fi
+}
+
+# pass any stdin to main() in addition to input params
+STDIN=$(capture_stdin)
+
+if [ "$STDIN" ]; then
+    echo -E "$STDIN" | main "$@"
+else
+    main "$@"
+fi

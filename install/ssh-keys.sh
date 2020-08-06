@@ -3,8 +3,6 @@
 # Start
 echo "ssh-keys.sh starting."
 
-source install/1password.sh
-
 PROFILE="unknown"
 if [[ -f "/tmp/.dotfiles-profile" ]]; then
     PROFILE="$(cat /tmp/.dotfiles-profile)"
@@ -14,24 +12,24 @@ fi
 case "$PROFILE" in
 "work")
     echo "Downloading Atlassian SSH key from 1password"
-    OP_UUID=$(op list items | jq -r '.[] | select(.overview.title == "Atlassian - SSH Key") | .uuid')
+    OP_UUID=$(. bin/1p list items | jq -r '.[] | select(.overview.title == "Atlassian - SSH Key") | .uuid')
 
-    rm -f $HOME/.ssh/id_rsa.atlassian*
-    op get document ${OP_UUID} > $HOME/.ssh/id_rsa.atlassian
+    rm -f $HOME/.ssh/id_rsa.atlassian* || true
+    . bin/1p get document ${OP_UUID} > $HOME/.ssh/id_rsa.atlassian
     # make sure we have strict permissions on our keyfiles
     chmod 600 $HOME/.ssh/id_rsa.atlassian
     # generate public key file
-    PASSPHRASE=$(op get item ${OP_UUID} | jq -r '.details.sections[].fields[]? | select(.t == "passphrase") | .v')
+    PASSPHRASE=$(. bin/1p get item ${OP_UUID} | jq -r '.details.sections[].fields[]? | select(.t == "passphrase") | .v')
     ssh-keygen -y -P ${PASSPHRASE} -f $HOME/.ssh/id_rsa.atlassian > $HOME/.ssh/id_rsa.atlassian.pub
     ;;
 esac
 
 
-OP_UUID=$(op list items | jq -r '.[] | select(.overview.title == "Personal - SSH Key") | .uuid')
-PASSPHRASE=$(op get item ${OP_UUID} | jq -r '.details.sections[].fields[]? | select(.t == "passphrase") | .v')
-rm -f $HOME/.ssh/id_rsa.personal*
+OP_UUID=$(. bin/1p list items | jq -r '.[] | select(.overview.title == "Personal - SSH Key") | .uuid')
+PASSPHRASE=$(. bin/1p get item ${OP_UUID} | jq -r '.details.sections[].fields[]? | select(.t == "passphrase") | .v')
+rm -f $HOME/.ssh/id_rsa.personal* || true
 # save personal ssh key
-op get document ${OP_UUID} > $HOME/.ssh/id_rsa.personal
+. bin/1p get document ${OP_UUID} > $HOME/.ssh/id_rsa.personal
 # make sure we have strict permissions on our keyfiles
 chmod 600 $HOME/.ssh/id_rsa.personal
 # generate public key file

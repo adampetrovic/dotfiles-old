@@ -1,5 +1,6 @@
 - shell:
     - [mkdir -p ~/.ssh/master, Creating SSH ControlMaster directory]
     - [mkdir -p ~/.ssh/config.d, Creating SSH Config Subdir]
+    - [source install/ssh-keys.sh, Installing SSH Keys]
 - link:
     ~/.ssh/config: ssh/config

@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# check cli tool is installed
+[[ ! -f $(which op) ]] && echo "Unable to find 1password-cli binary (op)" && exit 1
+
 # set up 1password cli tool
 check_login="$(op get account)"
 

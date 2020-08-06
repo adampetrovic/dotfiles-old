@@ -4,3 +4,4 @@
 
 - shell:
     - [mkdir -p ~/.config/vim/tmp/undo, Creating persistent undo dir]
+    - [vim --cmd "set t_ti= t_te=" +NeoBundleUpdate +q, Run NeoBundleUpdate]

@@ -3,6 +3,13 @@
 # Start
 echo "macos.sh starting."
 
+PROFILE="unknown"
+if [[ -f "/tmp/.dotfiles-profile" ]]; then
+    PROFILE="$(cat /tmp/.dotfiles-profile)"
+fi
+
+echo "Running against ${PROFILE} profile"
+
 # Ask for the administrator password upfront
 sudo -v
 
@@ -14,6 +21,15 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 ###############################################################################
 # Set computer name (as done via System Preferences → Sharing)
 _hn="macbook"
+case "$PROFILE" in
+"work")
+    _hn="workbook"
+    ;;  
+*)
+    _hn="macbook"
+    ;;  
+esac
+
 sudo scutil --set ComputerName "$_hn"
 sudo scutil --set HostName "$_hn"
 sudo scutil --set LocalHostName "$_hn"

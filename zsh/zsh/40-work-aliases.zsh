@@ -6,10 +6,10 @@ function micros-ssh() {
 function stacks() {
     if [ "$#" -eq 2 ]
     then
-        PARAM='.environments[] | select(.env == "'$2'")'
+        PARAM='.environments | "'$2'" as $k'
     elif [ "$#" -eq 1 ]
     then
-        PARAM='.environments[]'
+        PARAM='.environments | keys[] as $k'
     else
         echo "Usage: $0 <name> <end>"
         exit 1
@@ -19,24 +19,54 @@ function stacks() {
         [
             $PARAM |
             {
-                env: .env,
-                stable: {
-                    traffic: .stable.traffic,
-                    deploymentId: .stable.deploymentId
-                },
-                canary: {
-                    traffic: .canary.traffic,
-                    deploymentId: .canary.deploymentId
-                },
-                previous: {
-                    traffic: .previous.traffic,
-                    deploymentId: .previous.deploymentId
+                env: \$k,
+                url: .[\$k].url,
+                stacks: {
+                    stable: {
+                        traffic: .[\$k].stable.traffic,
+                        id: .[\$k].stable.id
+                    },
+                    canary: {
+                        traffic: .[\$k].canary.traffic,
+                        id: .[\$k].canary.id
+                    },
+                    previous: {
+                        traffic: .[\$k].previous.traffic,
+                        id: .[\$k].previous.id
+                    }
                 }
             }
         ]
 END
 
-    JSON_RESP=$(micros service:show --json $1 | jq -r "$JQ_EXPR")
+    JSON_RESP=$(atlas micros service show --service $1 --output json | jq -r "$JQ_EXPR")
+    echo $JSON_RESP | jq
+
+}
+
+function instance-type() {
+    if [ "$#" -eq 2 ]
+    then
+        PARAM='.stacks | "'$2'" as $k'
+    elif [ "$#" -eq 1 ]
+    then
+        PARAM='.stacks | keys[] as $k'
+    else
+        echo "Usage: $0 <name> <end>"
+        exit 1
+    fi
+
+    read -r -d '' JQ_EXPR << END
+        [
+            $PARAM |
+            {
+                env: \$k, 
+                instanceType: .[\$k][].outputs.WebServerInstance
+            }
+        ]
+END
+
+    JSON_RESP=$(atlas micros service show --service $1 --output json | jq -r "$JQ_EXPR")
     echo $JSON_RESP | jq
 
 }

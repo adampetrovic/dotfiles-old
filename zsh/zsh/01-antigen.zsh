@@ -16,5 +16,8 @@ if [[ -e $HOME/.antigen.zsh ]]; then
     # custom utils
     antigen bundle zlsun/solarized-man
 
+    # load bundles
+    source $HOME/.zsh/04-zsh-bundles.zsh
+
     antigen apply
 fi

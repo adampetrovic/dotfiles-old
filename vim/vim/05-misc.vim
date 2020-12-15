@@ -15,3 +15,5 @@ endif
 " Autocorrect words / spelling mistakes
 iab teh the
 iab Teh The
+
+" george doesn't use vim

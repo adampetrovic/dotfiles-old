@@ -4,16 +4,16 @@ export ZSH_TMUX_ITERM2=false
 
 antigen bundles <<EOBUNDLES
     copybuffer
+    extract
     git
+    golang
     jira
-    pip
+    pipenv
     python
     sudo
     tmux
     tmuxinator
+    vi-mode
 
     skx/sysadmin-util
 EOBUNDLES
-
-bindkey "^R" history-incremental-search-backward
-bindkey "^N" history-incremental-search-forward

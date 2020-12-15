@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.atlassian.rgates.alfredapp.hello</string>
+	<key>connections</key>
+	<dict>
+		<key>4DEF98B7-DEF4-49BA-80EF-36B8F1172D24</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>5D2E2D38-7D71-4A89-81CA-2A483A72C6BD</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>F783E070-BF85-45AD-9EB0-D74696532769</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>5D2E2D38-7D71-4A89-81CA-2A483A72C6BD</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Robbie Gates</string>
+	<key>description</key>
+	<string>Interact with hello.atlassian.net</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Hello</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string></string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>5D2E2D38-7D71-4A89-81CA-2A483A72C6BD</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>keyword</key>
+				<string>hr</string>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Contacting hello</string>
+				<key>script</key>
+				<string>#!/bin/zsh -f
+
+./hello.zsh RecentlyWorkedOnQuery workedOn</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>helloRecentlyViewed.zsh</string>
+				<key>subtext</key>
+				<string>Search recently viewed pages on hello.atlassian.net</string>
+				<key>title</key>
+				<string>Hello Recently Viewed</string>
+				<key>type</key>
+				<integer>8</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>4DEF98B7-DEF4-49BA-80EF-36B8F1172D24</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>keyword</key>
+				<string>hw</string>
+				<key>queuedelaycustom</key>
+				<integer>1</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Contacting hello</string>
+				<key>script</key>
+				<string>#!/bin/zsh -f
+
+./hello.zsh RecentlyWorkedOnQuery workedOn</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>helloWorkedOn.zsh</string>
+				<key>subtext</key>
+				<string>Search worked on pages in hello.atlassian.net</string>
+				<key>title</key>
+				<string>Hello Worked On</string>
+				<key>type</key>
+				<integer>8</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>F783E070-BF85-45AD-9EB0-D74696532769</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>This workflow provides
+- An `hr` search which searches your recently viewed items on hello, and
+- An `hw` search which searches your recently worked on items on hello.
+
+Requirements:
+- jq - get it from homebrew via `brew install jq`. Don't use homebrew yet ? Learn more at https://brew.sh.
+- A .netrc configured with an api key for hello.atlassian.net. Don't about .netrc ? Read the blog below.
+
+Need more Details ? go/helloalfred</string>
+	<key>uidata</key>
+	<dict>
+		<key>4DEF98B7-DEF4-49BA-80EF-36B8F1172D24</key>
+		<dict>
+			<key>note</key>
+			<string>Worked On</string>
+			<key>xpos</key>
+			<integer>75</integer>
+			<key>ypos</key>
+			<integer>65</integer>
+		</dict>
+		<key>5D2E2D38-7D71-4A89-81CA-2A483A72C6BD</key>
+		<dict>
+			<key>xpos</key>
+			<integer>305</integer>
+			<key>ypos</key>
+			<integer>50</integer>
+		</dict>
+		<key>F783E070-BF85-45AD-9EB0-D74696532769</key>
+		<dict>
+			<key>note</key>
+			<string>Worked On</string>
+			<key>xpos</key>
+			<integer>70</integer>
+			<key>ypos</key>
+			<integer>250</integer>
+		</dict>
+	</dict>
+	<key>variablesdontexport</key>
+	<array/>
+	<key>version</key>
+	<string>1.0.4</string>
+	<key>webaddress</key>
+	<string>http://go.atlassian.com/helloalfred</string>
+</dict>
+</plist>

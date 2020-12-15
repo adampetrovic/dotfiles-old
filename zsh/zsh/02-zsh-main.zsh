@@ -1,12 +1,12 @@
 # paths
-export PATH="$HOME/.bin:/usr/local/bin:/usr/local/sbin:$PATH"
+export PATH="$HOME/.bin:/usr/local/bin:/usr/local/sbin:/usr/local/opt/openssl/bin:$PATH"
 
 # xdg
 export XDG_CACHE_HOME="$HOME/.fonts"
 
 # default compile flags
-export LDFLAGS="-L/usr/local/opt/zlib/lib"
-export CPPFLAGS="-I/usr/local/opt/zlib/include"
+export LDFLAGS="-L/usr/local/opt/zlib/lib:/usr/local/opt/openssl/lib"
+export CPPFLAGS="-I/usr/local/opt/zlib/include:/usr/local/opt/openssl/include"
 
 export EDITOR='vim'
 
@@ -36,3 +36,13 @@ unsetopt auto_cd
 autoload edit-command-line
 zle -N edit-command-line
 bindkey '^Xe' edit-command-line
+bindkey "^R" history-incremental-search-backward
+bindkey "^N" history-incremental-search-forward
+
+# History Configuration
+HISTSIZE=50000              #How many lines of history to keep in memory
+HISTFILE=~/.zsh_history     #Where to save history to disk
+SAVEHIST=99999999           #Number of history entries to save to disk
+setopt    appendhistory     #Append history to the history file (no overwriting)
+setopt    sharehistory      #Share history across terminals
+setopt    incappendhistory  #Immediately append to the history file, not just when a term is killed

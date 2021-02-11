@@ -31,7 +31,6 @@ brew "httpstat"
 brew "python"
 brew "httpie"
 brew "imagemagick"
-brew "jq"
 brew "keychain"
 brew "macosvpn"
 brew "mas"
@@ -89,6 +88,7 @@ cask "vlc"
 # mac app store
 mas "Amphetamine", id: 937984704
 mas "Bear", id: 1091189122 
+mas "Drafts", id: 1435957248
 mas "Paprika Recipe Manager 3", id: 1303222628
 mas "Parcel", id: 639968404
 mas "Reeder", id: 1449412482

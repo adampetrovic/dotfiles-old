@@ -10,3 +10,8 @@ Host petrovic.network nuc nuc.lan
     Hostname petrovic.network
     User adam
     PreferredAuthentications publickey
+
+Host hass.petrovic.network hass
+    Hostname hass.petrovic.network
+    User adam
+    PreferredAuthentications publickey

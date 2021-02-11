@@ -2,6 +2,7 @@ tap "homebrew/core"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "buo/cask-upgrade"
+tap "homebrew/cask-drivers"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 
@@ -95,11 +96,12 @@ cask "spectacle"
 cask "spotify"
 cask "suspicious-package"
 cask "telegram"
-cask "zoomus"
+cask "zoom"
 
 # mac app store
 mas "Amphetamine", id: 937984704
 mas "Bear", id: 1091189122 
+mas "Drafts", id: 1435957248
 mas "Parcel", id: 639968404
 mas "Reeder", id: 1449412482
 mas "Things3", id: 904280696

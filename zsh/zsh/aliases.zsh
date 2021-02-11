@@ -1,3 +1,10 @@
+alias ls="gls --color"
+alias dns="sudo killall -hUP mDNSResponder"
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+
+alias prms="prm start"
+
+
 # ssh into a dev instance. requires atlas + the atlas micros plugin to be installed
 function micros-ssh() { 
     atlas micros service ssh --service=$1 --env=$2 
@@ -87,7 +94,7 @@ function sidecar-versions() {
     echo $JSON_RESP | jq
 }
 
-func service-dns() {
+function service-dns() {
     atlas slauth curl -a service-central -- "https://services.prod.atl-paas.net/api/v2/services/$1/attributes/dns-name" 2>/dev/null | jq -r '.value[].value'
 }
 
@@ -103,6 +110,5 @@ function metric-dimensions() {
         }
 END
     JSON_RESP=$(http --timeout=${TIMEOUT} GET ${METRIC_URL}/\?query\=sf_metric:${METRIC_NAME} x-sf-token:${SFX_TOKEN} | jq -r ".results[0] | ${RESP_FORMAT}")
-    #JSON_RESP=$(http --timeout=${TIMEOUT} GET "${METRIC_URL}/?query\=sf_metric:${METRIC_NAME}" x-sf-token:${SFX_TOKEN} | jq -r ".results[0] | ${RESP_FORMAT}")
     echo $JSON_RESP | jq
 }

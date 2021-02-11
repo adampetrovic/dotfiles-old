@@ -2,6 +2,22 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>customSites</key>
+	<dict>
+		<key>32739394-BF7B-41D8-9E41-4F7BE9EFFBF9</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>go/</string>
+			<key>text</key>
+			<string>Go</string>
+			<key>url</key>
+			<string>https://go.atlassian.com/{query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+	</dict>
 	<key>onlyShowEnabledInPrefs</key>
 	<true/>
 </dict>

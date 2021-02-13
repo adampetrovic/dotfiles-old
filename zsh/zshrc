@@ -58,6 +58,7 @@ zplug 'plugins/terraform', from:oh-my-zsh
 
 # binaries / commands
 zplug 'asdf-vm/asdf', use:asdf.sh
+zplug 'dandavison/delta', as:command, from:gh-r
 zplug 'junegunn/fzf', use:'shell/*.zsh'
 zplug 'junegunn/fzf-bin', as:command, from:gh-r, rename-to:fzf
 zplug 'paulirish/git-open', as:plugin

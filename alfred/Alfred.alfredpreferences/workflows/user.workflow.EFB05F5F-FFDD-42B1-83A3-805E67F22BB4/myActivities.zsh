@@ -5,6 +5,8 @@ set -ex
 operationName="${1:?}"
 operationActivityElement="${2:?}"
 
+export JQ="/Users/apetrovic/.zplug/bin/jq"
+
 # Use chosen jq if specified, otherwise search path, otherwise use brew default location
 : JQ="${JQ:=${$(whence jq):-/usr/local/bin/jq}}"
 "${JQ}" . /dev/null || {

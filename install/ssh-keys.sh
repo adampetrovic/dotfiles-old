@@ -11,16 +11,16 @@ fi
 # downloading ssh key
 case "$PROFILE" in
 "work")
-    echo "Downloading Atlassian SSH key from 1password"
+    echo "Downloading Work SSH key from 1password"
     OP_UUID=$(. bin/1p list items | jq -r '.[] | select(.overview.title == "Atlassian - SSH Key") | .uuid')
 
     rm -f $HOME/.ssh/id_rsa.atlassian* || true
-    . bin/1p get document ${OP_UUID} > $HOME/.ssh/id_rsa.atlassian
+    . bin/1p get document ${OP_UUID} > $HOME/.ssh/id_rsa.work
     # make sure we have strict permissions on our keyfiles
     chmod 600 $HOME/.ssh/id_rsa.atlassian
     # generate public key file
     PASSPHRASE=$(. bin/1p get item ${OP_UUID} | jq -r '.details.sections[].fields[]? | select(.t == "passphrase") | .v')
-    ssh-keygen -y -P ${PASSPHRASE} -f $HOME/.ssh/id_rsa.atlassian > $HOME/.ssh/id_rsa.atlassian.pub
+    ssh-keygen -y -P ${PASSPHRASE} -f $HOME/.ssh/id_rsa.work > $HOME/.ssh/id_rsa.work.pub
     ;;
 esac
 

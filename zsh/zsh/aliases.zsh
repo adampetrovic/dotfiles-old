@@ -1,7 +1,7 @@
 alias ls="gls --color"
 alias dns="sudo killall -hUP mDNSResponder"
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
-alias clamshell-off='displayplacer "id:F2F8259E-046F-0A83-F3F0-4A57B28DB110 res:3008x1692 hz:60 color_depth:8 scaling:on origin:(0,0) degree:0" "id:1AE734BC-5819-C380-5A19-2750125991B7 res:1680x1050 color_depth:4 scaling:on origin:(-34,2622) degree:0" "id:EDAD552F-6898-CEA2-604E-5119211C6EBC res:1692x3008 hz:60 color_depth:8 scaling:on origin:(-1692,-386) degree:270"'
+alias clamshell-off='displayplacer "id:F2F8259E-046F-0A83-F3F0-4A57B28DB110 res:3008x1692 hz:60 color_depth:8 scaling:on origin:(0,0) degree:0" "id:1AE734BC-5819-C380-5A19-2750125991B7 res:1680x1050 color_depth:4 scaling:on origin:(3008,1692) degree:0" "id:EDAD552F-6898-CEA2-604E-5119211C6EBC res:1692x3008 hz:60 color_depth:8 scaling:on origin:(-1692,-386) degree:270"'
 alias clamshell-on='displayplacer "id:F2F8259E-046F-0A83-F3F0-4A57B28DB110 res:3200x1800 hz:60 color_depth:8 scaling:on origin:(0,0) degree:0" "id:EDAD552F-6898-CEA2-604E-5119211C6EBC res:1800x3200 hz:60 color_depth:8 scaling:on origin:(-1800,-536) degree:270"'
 
 alias prms="prm start"

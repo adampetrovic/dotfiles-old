@@ -43,8 +43,6 @@ zplug 'zpm-zsh/material-colors'
 
 # oh-my-zsh plugins
 zplug 'lib/clipboard', from:oh-my-zsh
-zplug 'plugins/asdf', from:oh-my-zsh
-zplug 'plugins/brew', from:oh-my-zsh
 zplug 'plugins/colored-man-pages', from:oh-my-zsh
 zplug 'plugins/colorize', from:oh-my-zsh
 zplug 'plugins/command-not-found', from:oh-my-zsh
@@ -62,10 +60,11 @@ zplug 'modules/ssh', from:prezto
 
 
 # binaries / commands
-zplug 'asdf-vm/asdf', use:asdf.sh
 zplug 'dandavison/delta', as:command, from:gh-r
+zplug 'alecthomas/chroma', as:command, from:gh-r
 zplug 'junegunn/fzf', use:'shell/*.zsh'
 zplug 'junegunn/fzf-bin', as:command, from:gh-r, rename-to:fzf
+zplug 'go-jira/jira', as:command, from:gh-r, rename-to:jira
 zplug 'paulirish/git-open', as:plugin
 zplug 'rupa/z', use:z.sh
 zplug 'stedolan/jq', as:command, from:gh-r, rename-to:jq
@@ -99,7 +98,4 @@ source ~/.zsh/aliases.zsh
 # use rg for fzf
 export FZF_DEFAULT_COMMAND='rg --files --hidden --glob \!.git'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
-
-# source asdf
-# ~/.zplug/repos/asdf-vm/asdf/
-source ~/.zplug/repos/asdf-vm/asdf/asdf.sh
+export ZSH_COLORIZE_TOOL="chroma"

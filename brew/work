@@ -77,6 +77,8 @@ cask "font-source-code-pro-for-powerline"
 cask "goland"
 cask "google-chrome"
 cask "google-drive-file-stream"
+cask "intellij-idea"
+cask "insomnia"
 cask "istat-menus"
 cask "iterm2"
 cask "keyboardcleantool"
@@ -101,6 +103,6 @@ mas "Bear", id: 1091189122
 mas "Drafts", id: 1435957248
 mas "Instapaper", id: 288545208
 mas "Parcel", id: 639968404
-mas "Reeder", id: 1449412482
+mas "Reeder", id: 1529448980
 mas "Things3", id: 904280696
 mas "Xnip", id: 1221250572

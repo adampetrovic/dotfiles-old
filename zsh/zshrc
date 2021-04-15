@@ -55,6 +55,11 @@ zplug 'plugins/gnu-utils', from:oh-my-zsh
 zplug 'plugins/sudo', from:oh-my-zsh
 zplug 'plugins/terraform', from:oh-my-zsh
 
+# prezto-plugins
+zplug 'modules/osx', from:prezto
+zstyle ':prezto:module:ssh:load' identities 'id_rsa.personal' 'id_rsa.work'
+zplug 'modules/ssh', from:prezto
+
 
 # binaries / commands
 zplug 'asdf-vm/asdf', use:asdf.sh
@@ -87,9 +92,6 @@ setopt    sharehistory      #Share history across terminals
 setopt    incappendhistory  #Immediately append to the history file, not just when a term is killed
 
 EDITOR=vim
-
-# SSH Key Agent
-eval `keychain -q --eval --agents ssh --inherit any $HOME/.ssh/*(.^A)`
 
 # aliases
 source ~/.zsh/aliases.zsh

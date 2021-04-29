@@ -12,9 +12,6 @@ asdf plugin update python
 # Install and update plugins
 versions=(
     "3.8.5"
-    "3.7.8"
-    "3.6.11"
-    "2.7.18"
 )
 
 for i in "${versions[@]}"
@@ -23,7 +20,7 @@ do
     asdf reshim python ${i}
 done
 
-asdf global python 3.6.11
+asdf global python 3.8.5
 
 # Finished
 echo "$(basename "$0") complete."

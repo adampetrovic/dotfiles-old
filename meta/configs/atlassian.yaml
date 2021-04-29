@@ -1,6 +1,11 @@
+- link:
+    ~/.config/cloudtoken/config.yaml: cloudtoken/config.yaml
+    ~/.jira.d: jira
+
 - shell:
     - 
         command: source install/atlassian.sh
         stderr: true
         stdout: true
         description: Install Atlassian Tooling
+

@@ -11,10 +11,7 @@ asdf plugin update golang
 
 # Install and update plugins
 versions=(
-    "1.13"
-    "1.13.14"
-    "1.14"
-    "1.14.6"
+    "1.16"
 )
 
 for i in "${versions[@]}"
@@ -23,7 +20,7 @@ do
     asdf reshim golang ${i}
 done
 
-asdf global golang 1.14.6
+asdf global golang 1.16
 
 # Finished
 echo "$(basename "$0") complete."

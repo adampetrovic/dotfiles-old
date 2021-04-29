@@ -16,8 +16,11 @@ brew "zlib"
 
 # atlassian specific tools
 tap "atlassian/micros", "ssh://git@stash.atlassian.com:7997/micros/homebrew-tap.git"
+tap "atlassian/cloudtoken", "ssh://git@bitbucket.org/atlassian/cloudtoken-homebrew-tap.git"
 brew "atlas-cli"
+cask "cloudtoken"
 
+# standard brew binaries
 brew "asdf"
 brew "awscli"
 brew "bzip2"
@@ -72,8 +75,7 @@ cask "brainfm"
 cask "dbvisualizer"
 cask "docker"
 cask "fantastical"
-cask "font-source-code-pro"
-cask "font-source-code-pro-for-powerline"
+cask "font-fira-code"
 cask "goland"
 cask "google-chrome"
 cask "google-drive-file-stream"

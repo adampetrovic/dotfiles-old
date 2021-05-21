@@ -74,6 +74,7 @@ cask "betterzip"
 cask "brainfm"
 cask "dbvisualizer"
 cask "docker"
+cask "cleanshot"
 cask "fantastical"
 cask "font-fira-code"
 cask "google-chrome"
@@ -105,4 +106,3 @@ mas "Instapaper", id: 288545208
 mas "Parcel", id: 639968404
 mas "Reeder", id: 1529448980
 mas "Things3", id: 904280696
-mas "Xnip", id: 1221250572

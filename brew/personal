@@ -56,6 +56,7 @@ cask "appcleaner"
 cask "bartender"
 cask "betterzip"
 cask "balenaetcher"
+cask "cleanshot"
 cask "fantastical"
 cask "font-source-code-pro"
 cask "font-source-code-pro-for-powerline"
@@ -93,5 +94,4 @@ mas "Parcel", id: 639968404
 mas "Reeder", id: 1529448980
 mas "Things3", id: 904280696
 mas "Tweetbot3", id: 1384080005
-mas "Xnip", id: 1221250572
 mas "Paprika Recipe Manager 3", id: 1303222628

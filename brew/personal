@@ -86,12 +86,8 @@ cask "vlc"
 
 # mac app store
 mas "Amphetamine", id: 937984704
-mas "Bear", id: 1091189122 
-mas "Drafts", id: 1435957248
 mas "Instapaper", id: 288545208
 mas "Paprika Recipe Manager 3", id: 1303222628
 mas "Parcel", id: 639968404
 mas "Reeder", id: 1529448980
 mas "Things3", id: 904280696
-mas "Tweetbot3", id: 1384080005
-mas "Paprika Recipe Manager 3", id: 1303222628

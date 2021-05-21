@@ -66,13 +66,12 @@ brew "yarn"
 
 cask "1password"
 cask "1password-cli"
-cask "adobe-creative-cloud"
 cask "alfred"
 cask "appcleaner"
 cask "bartender"
 cask "betterzip"
 cask "brainfm"
-cask "dbvisualizer"
+cask "datagrip"
 cask "docker"
 cask "cleanshot"
 cask "fantastical"
@@ -82,7 +81,6 @@ cask "google-drive-file-stream"
 cask "insomnia"
 cask "istat-menus"
 cask "iterm2"
-cask "keyboardcleantool"
 cask "kindle"
 cask "little-snitch"
 cask "mullvadvpn"
@@ -100,8 +98,6 @@ cask "zoom"
 
 # mac app store
 mas "Amphetamine", id: 937984704
-mas "Bear", id: 1091189122 
-mas "Drafts", id: 1435957248
 mas "Instapaper", id: 288545208
 mas "Parcel", id: 639968404
 mas "Reeder", id: 1529448980

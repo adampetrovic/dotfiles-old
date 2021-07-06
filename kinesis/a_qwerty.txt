@@ -44,11 +44,12 @@
 * Macro Definitions
 * =================
 
-* ctrl+s - take screenshot using Cleanshot
-{lctrl}{s}>{-lwin}{-lshift}{4}{+lshift}{+lwin}
+* left+s - take screenshot using Cleanshot
+{kp-s}>{-lwin}{-lshift}{4}{+lshift}{+lwin}{kptoggle}
 
 * ctrl+c - Fantastical quick entry
-{lctrl}{c}>{-lwin}{-lshift}{c}{+lshift}{+lwin}
+{kp-c}>{-lwin}{-lshift}{c}{+lshift}{+lwin}{kptoggle}
+
 
 * ctrl+enter - things3 quick entry
 {lctrl}{space}>{-lctrl}{space}{+lctrl}

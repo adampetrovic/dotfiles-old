@@ -44,13 +44,16 @@
 * Macro Definitions
 * =================
 
-* ctrl+s - take screenshot using Xnip
-{lctrl}{s}>{-lwin}{-lshift}{x}{+lshift}{+lwin}
+* ctrl+s - take screenshot using Cleanshot
+{lctrl}{s}>{-lwin}{-lshift}{4}{+lshift}{+lwin}
+
+* ctrl+c - Fantastical quick entry
+{lctrl}{c}>{-lwin}{-lshift}{c}{+lshift}{+lwin}
 
 * ctrl+enter - things3 quick entry
 {lctrl}{space}>{-lctrl}{space}{+lctrl}
 
-* spectacle remapping
+* rectangle remapping
 * ctrl+left arrow - move window to left half
 {lctrl}{left}>{-lalt}{-lwin}{left}{+lwin}{+lalt}
 * ctrl+right arrow - move window to right half
@@ -65,6 +68,3 @@
 {kp-right}>{-lctrl}{-lalt}{-lwin}{right}{+lctrl}{+lalt}{+lwin}
 * ctrl+f - make window full screen
 {lctrl}{f}>{-lalt}{-lwin}{f}{+lwin}{+lalt}
-
-
-

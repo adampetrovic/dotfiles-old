@@ -4,6 +4,8 @@
 <dict>
 	<key>bundleid</key>
 	<string>com.atlassian.rgates.alfredapp.hello</string>
+	<key>category</key>
+	<string>Productivity</string>
 	<key>connections</key>
 	<dict>
 		<key>4DEF98B7-DEF4-49BA-80EF-36B8F1172D24</key>
@@ -43,25 +45,6 @@
 	<string>Hello</string>
 	<key>objects</key>
 	<array>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>browser</key>
-				<string></string>
-				<key>spaces</key>
-				<string></string>
-				<key>url</key>
-				<string></string>
-				<key>utf8</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.openurl</string>
-			<key>uid</key>
-			<string>5D2E2D38-7D71-4A89-81CA-2A483A72C6BD</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -112,6 +95,25 @@
 			<string>4DEF98B7-DEF4-49BA-80EF-36B8F1172D24</string>
 			<key>version</key>
 			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string></string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>5D2E2D38-7D71-4A89-81CA-2A483A72C6BD</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -172,7 +174,7 @@
 
 Requirements:
 - jq - get it from homebrew via `brew install jq`. Don't use homebrew yet ? Learn more at https://brew.sh.
-- A .netrc configured with an api key for hello.atlassian.net. Don't about .netrc ? Read the blog below.
+- A .netrc configured with an api key for hello.atlassian.net. Don't know about .netrc ? Read the blog below.
 
 Need more Details ? go/helloalfred</string>
 	<key>uidata</key>
@@ -191,7 +193,7 @@ Need more Details ? go/helloalfred</string>
 			<key>xpos</key>
 			<integer>305</integer>
 			<key>ypos</key>
-			<integer>50</integer>
+			<integer>65</integer>
 		</dict>
 		<key>F783E070-BF85-45AD-9EB0-D74696532769</key>
 		<dict>
@@ -206,7 +208,7 @@ Need more Details ? go/helloalfred</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.0.4</string>
+	<string>1.0.6</string>
 	<key>webaddress</key>
 	<string>http://go.atlassian.com/helloalfred</string>
 </dict>

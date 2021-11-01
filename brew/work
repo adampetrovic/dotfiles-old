@@ -6,6 +6,10 @@ tap "homebrew/cask-drivers"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 
+# font
+brew "font-jetbrains-mono"
+brew "font-fira-code"
+
 # developer / system dependencies
 brew "autoconf"
 brew "cmake"
@@ -49,6 +53,7 @@ brew "ripgrep"
 brew "ssh-copy-id"
 brew "terraform"
 brew "tig"
+brew "tldr"
 brew "tree"
 brew "vim"
 brew "vault"

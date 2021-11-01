@@ -1,8 +1,2 @@
 - shell:
     - [source install/dock.sh, Applying Dock preferences]
-    - 
-        command: source install/vpn.sh
-        stdin: true
-        stderr: true
-        stdout: true
-        description: Install VPN profile
